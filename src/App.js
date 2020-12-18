@@ -10,7 +10,17 @@ var emojiDictionary = {
   "😋": "Face Savouring Delicious Food",
   "🤧": "Sneezing Face ",
   "😁": "Beaming Face with Smiling Eyes",
-  "🥰": "Smiling Face with Hearts"
+  "🥰": "Smiling Face with Hearts",
+  "😛": "Face with Tongue",
+  "😜": "Winking Face with Tongue",
+  "🤪": " Zany Face",
+  "😝": " Squinting Face with Tongue",
+  "🤑": " Money-Mouth Face",
+  "🤗": " Hugging Face",
+  "🤭": " Face with Hand Over Mouth",
+  "🤫": " Shushing Face",
+  "🤔": " Thinking Face",
+  "🤐": " Zipper-Mouth Face"
 };
 
 var emojisweknow = Object.keys(emojiDictionary);
