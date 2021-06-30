@@ -1,12 +1,42 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
 body {
-  min-height: 100vh;
+  color:white;
+  height: 100vh;
+  weight:100vw;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(90deg, #1f005c, #570061, #840060, #aa005b, #ca0a51, #e33b45, #f56237, #ff8827);
+}
+
+.title{
+  font-size: 3em;
+}
+
+.emoji{
+  width: fit-content;
+
+}
+.emojis{
+
+  width: 70%;
+  /* flex-direction: column; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  background: url("img/bg.jpg") center/cover;
+  /* border: 2px solid black; */
+}
+
+.inputbox{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
 }

@@ -138,27 +138,27 @@ export default function App() {
 
   return (
     <div className="App">
-      {/* {style:backgroundcolor:"grey"} */}
+      <h1 className="title">EmojiPedia 🗯</h1>
 
-      <h1>Inside Out!!</h1>
-
-      <input onChange={emojiInputHandler} />
+      <input className="inputbox" onChange={emojiInputHandler} />
 
       <h2>Meaning of emoji: {meaning} </h2>
 
-      <h3>Currently, We only know these emojis. </h3>
+      {/*<h3>Currently, We only know these emojis. </h3>*/}
 
-      {emojisweknow.map(function (emoji) {
-        return (
-          <span
-            onClick={() => emojiClickHandler(emoji)}
-            style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
-            key={emoji}
-          >
-            {emoji}
-          </span>
-        );
-      })}
+      <div className="emojis">
+        {emojisweknow.map(function (emoji) {
+          return (
+            <span className="emoji"
+              onClick={() => emojiClickHandler(emoji)}
+              style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
+              key={emoji}
+            >
+              {emoji}
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 }
